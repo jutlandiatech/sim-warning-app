@@ -206,7 +206,7 @@ sequenceDiagram
         Platform->>Service: startForegroundService()
         Service->>Store: read settings
         Service->>Access: ready()
-        Service->>Service: Enter foreground; initialize observer and refresh
+        Service->>Service: Enter foreground, initialize observer and refresh
         Service->>Platform: Android accepts start request
         Platform->>Controller: accepted
     else Setup already complete
@@ -233,9 +233,9 @@ sequenceDiagram
     Service->>Observer: start()
     Observer->>OS: Register SIM subscription and service-state listeners
     OS->>Observer: Subscription or service-state callback
-    Observer->>Observer: Classify per-SIM state; aggregate connectivity
+    Observer->>Observer: Classify per-SIM state, aggregate connectivity
     Observer->>Service: Changed(Connectivity)
-    Service->>Service: refresh(); read preferences, access, airplane mode, sound policy
+    Service->>Service: refresh(), read preferences, access, airplane mode, sound policy
     Service->>Engine: update(elapsedRealtime, MonitorInput)
     Engine->>Service: MonitorResult(status, effects, nextDeadline)
     opt ShowWarning or Alert effect
