@@ -88,9 +88,9 @@ The core owns settings coordination and outage decisions. Android implementation
 classDiagram
     direction LR
 
-    class MainActivity <<Android activity>>
-    class AppRoot <<Compose UI>>
-    class SetupFlow <<Compose UI>>
+    class MainActivity <<Android_activity>>
+    class AppRoot <<Compose_UI>>
+    class SetupFlow <<Compose_UI>>
     class AppController {
         +finishSetup(state) Boolean
         +setMonitoring(enabled) Boolean
@@ -111,12 +111,12 @@ classDiagram
         +stop()
         +preferencesChanged()
     }
-    class AppPreferences <<Android adapter>>
-    class AndroidMonitorPlatform <<Android adapter>>
-    class AndroidAccess <<Android adapter>>
-    class MonitorService <<Android service>>
-    class CellularObserver <<Android adapter>>
-    class NotificationCenter <<Android adapter>>
+    class AppPreferences <<Android_adapter>>
+    class AndroidMonitorPlatform <<Android_adapter>>
+    class AndroidAccess <<Android_adapter>>
+    class MonitorService <<Android_service>>
+    class CellularObserver <<Android_adapter>>
+    class NotificationCenter <<Android_adapter>>
     class MonitorEngine {
         +update(nowMs, input) MonitorResult
         +dismissWarning()
@@ -130,9 +130,9 @@ classDiagram
     class SimService
     class WarningKind
     class SoundPolicy
-    class BootReceiver <<Android receiver>>
-    class DeadlineReceiver <<Android receiver>>
-    class WarningDismissReceiver <<Android receiver>>
+    class BootReceiver <<Android_receiver>>
+    class DeadlineReceiver <<Android_receiver>>
+    class WarningDismissReceiver <<Android_receiver>>
 
     SettingsStore <|.. AppPreferences : implements
     MonitoringPlatform <|.. AndroidMonitorPlatform : implements
@@ -192,23 +192,23 @@ sequenceDiagram
         UI->>Activity: permission review callback
         Activity->>Access: requiredRuntimePermissions()
         Activity->>Android: Request READ_PHONE_STATE / POST_NOTIFICATIONS as needed
-        Android-->>Activity: Permission result
-        Activity-->>UI: Refresh readiness
+        Android->>Activity: Permission result
+        Activity->>UI: Refresh readiness
         User->>UI: Start monitoring
         UI->>Access: ready()
         UI->>Controller: finishSetup(SetupState)
         Controller->>Platform: ready()
         Platform->>Access: ready()
-        Access-->>Platform: prerequisites satisfied
-        Platform-->>Controller: ready
+        Access->>Platform: prerequisites satisfied
+        Platform->>Controller: ready
         Controller->>Store: write setup complete and monitoring enabled
         Controller->>Platform: start()
         Platform->>Service: startForegroundService()
         Service->>Store: read settings
         Service->>Access: ready()
         Service->>Service: Enter foreground; initialize observer and refresh
-        Service-->>Platform: Android accepts start request
-        Platform-->>Controller: accepted
+        Service->>Platform: Android accepts start request
+        Platform->>Controller: accepted
     else Setup already complete
         UI->>Controller: resumeIfEnabled()
     end
@@ -232,12 +232,12 @@ sequenceDiagram
 
     Service->>Observer: start()
     Observer->>OS: Register SIM subscription and service-state listeners
-    OS-->>Observer: Subscription or service-state callback
+    OS->>Observer: Subscription or service-state callback
     Observer->>Observer: Classify per-SIM state; aggregate connectivity
-    Observer-->>Service: Changed(Connectivity)
+    Observer->>Service: Changed(Connectivity)
     Service->>Service: refresh(); read preferences, access, airplane mode, sound policy
     Service->>Engine: update(elapsedRealtime, MonitorInput)
-    Engine-->>Service: MonitorResult(status, effects, nextDeadline)
+    Engine->>Service: MonitorResult(status, effects, nextDeadline)
     opt ShowWarning or Alert effect
         Service->>Center: postWarning(kind, alert, episode start)
         Center->>OS: Post local notification using channel policy
@@ -249,16 +249,16 @@ sequenceDiagram
     opt A future deadline is required
         Service->>Alarm: Schedule elapsed-time deadline
         Service->>Service: Also post delayed refresh on main Handler
-        Alarm-->>Receiver: Deadline broadcast (may be delayed by Android)
+        Alarm->>Receiver: Deadline broadcast (may be delayed by Android)
         Receiver->>Service: refresh()
         Service->>Engine: update(current elapsed time, latest input)
     end
     opt Airplane, ringer, or interruption-filter change
-        OS-->>Service: System broadcast
+        OS->>Service: System broadcast
         Service->>Service: Re-read affected state and refresh
     end
     opt User dismisses warning
-        OS-->>Service: WarningDismissReceiver broadcast
+        OS->>Service: WarningDismissReceiver broadcast
         Service->>Engine: dismissWarning()
     end
 ```
@@ -279,15 +279,15 @@ sequenceDiagram
     participant Access as AndroidAccess
     participant Service as MonitorService
 
-    Android-->>Receiver: BOOT_COMPLETED or MY_PACKAGE_REPLACED
+    Android->>Receiver: BOOT_COMPLETED or MY_PACKAGE_REPLACED
     Receiver->>Controller: resumeIfEnabled()
     Controller->>Store: read settings
-    Store-->>Controller: setupComplete and monitoringEnabled
+    Store->>Controller: setupComplete and monitoringEnabled
     alt Both enabled
         Controller->>Platform: ready()
         Platform->>Access: ready()
-        Access-->>Platform: feature, phone permission, and notifications status
-        Platform-->>Controller: ready / not ready
+        Access->>Platform: feature, phone permission, and notifications status
+        Platform->>Controller: ready / not ready
         opt Ready
             Controller->>Platform: start()
             Platform->>Service: startForegroundService()
@@ -296,7 +296,7 @@ sequenceDiagram
             Service->>Service: Start observer and refresh
         end
     else Not configured or monitoring disabled
-        Controller-->>Receiver: No service start
+        Controller->>Receiver: No service start
     end
 ```
 
