@@ -1,0 +1,27 @@
+[
+  {
+    "name": "app.simwarning.core.AppControllerTest",
+    "tests": 7,
+    "failures": 0
+  },
+  {
+    "name": "app.simwarning.core.CellularEvidenceTest",
+    "tests": 6,
+    "failures": 0
+  },
+  {
+    "name": "app.simwarning.core.ConnectivityAggregationTest",
+    "tests": 5,
+    "failures": 0
+  },
+  {
+    "name": "app.simwarning.core.MonitorEngineTest",
+    "tests": 46,
+    "failures": 0
+  },
+  {
+    "name": "app.simwarning.core.SetupStateTest",
+    "tests": 6,
+    "failures": 0
+  }
+]

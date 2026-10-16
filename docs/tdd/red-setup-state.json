@@ -1,0 +1,27 @@
+{
+  "exitCode": 1,
+  "command": "tools/run-gradle.ps1 :core:test",
+  "phase": "red-setup-state",
+  "suites": [
+    {
+      "failures": 0,
+      "name": "app.simwarning.core.ConnectivityAggregationTest",
+      "tests": 5,
+      "errors": 0
+    },
+    {
+      "failures": 0,
+      "name": "app.simwarning.core.MonitorEngineTest",
+      "tests": 46,
+      "errors": 0
+    },
+    {
+      "failures": 5,
+      "name": "app.simwarning.core.SetupStateTest",
+      "tests": 6,
+      "errors": 0
+    }
+  ],
+  "observedAtUtc": "2026-10-15T14:41:48.1955489Z",
+  "testSha256": "17D38AF8D6B2B8E857958EBE526325B1DBE40ECE6BBC3D0DE4DD0B2CC8979B8C"
+}

@@ -1,0 +1,603 @@
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+app.simwarning.setup.SetupFlowTest:
+INSTRUMENTATION_STATUS: test=U07_missingAccessAndReviewNeverPretendsGrant
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U07_missingAccessAndReviewNeverPretendsGrant(SetupFlowTest.kt:120)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U07_missingAccessAndReviewNeverPretendsGrant(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U07_missingAccessAndReviewNeverPretendsGrant(SetupFlowTest.kt:120)
+
+INSTRUMENTATION_STATUS: test=U07_missingAccessAndReviewNeverPretendsGrant
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U02_immediateTranslationWithStableSelectedRows
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U02_immediateTranslationWithStableSelectedRows(SetupFlowTest.kt:53)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U02_immediateTranslationWithStableSelectedRows(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U02_immediateTranslationWithStableSelectedRows(SetupFlowTest.kt:53)
+
+INSTRUMENTATION_STATUS: test=U02_immediateTranslationWithStableSelectedRows
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U01_deviceLanguageAndFallback
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Failed to assert the following: (Selected = 'true')
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:262)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+	at androidx.compose.ui.test.AssertionsKt.assertIsSelected(Assertions.kt:88)
+	at app.simwarning.setup.SetupFlowTest.U01_deviceLanguageAndFallback(SetupFlowTest.kt:43)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U01_deviceLanguageAndFallback(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Failed to assert the following: (Selected = 'true')
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:262)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+	at androidx.compose.ui.test.AssertionsKt.assertIsSelected(Assertions.kt:88)
+	at app.simwarning.setup.SetupFlowTest.U01_deviceLanguageAndFallback(SetupFlowTest.kt:43)
+
+INSTRUMENTATION_STATUS: test=U01_deviceLanguageAndFallback
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U04_U06_backAndRecreationRetainStepLanguageAndInterval
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U04_U06_backAndRecreationRetainStepLanguageAndInterval(SetupFlowTest.kt:84)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U04_U06_backAndRecreationRetainStepLanguageAndInterval(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U04_U06_backAndRecreationRetainStepLanguageAndInterval(SetupFlowTest.kt:84)
+
+INSTRUMENTATION_STATUS: test=U04_U06_backAndRecreationRetainStepLanguageAndInterval
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U06_saveableStateRestoresCurrentStepAndPreferences
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U06_saveableStateRestoresCurrentStepAndPreferences(SetupFlowTest.kt:96)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U06_saveableStateRestoresCurrentStepAndPreferences(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U06_saveableStateRestoresCurrentStepAndPreferences(SetupFlowTest.kt:96)
+
+INSTRUMENTATION_STATUS: test=U06_saveableStateRestoresCurrentStepAndPreferences
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Failed: assertExists.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_screen')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists(SemanticsNodeInteraction.kt:125)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists$default(SemanticsNodeInteraction.kt:124)
+	at app.simwarning.setup.SetupFlowTest.U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest(SetupFlowTest.kt:61)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Failed: assertExists.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_screen')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists(SemanticsNodeInteraction.kt:125)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists$default(SemanticsNodeInteraction.kt:124)
+	at app.simwarning.setup.SetupFlowTest.U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest(SetupFlowTest.kt:61)
+
+INSTRUMENTATION_STATUS: test=U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U05_exactIntervalOptionsAndSelection
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.U05_exactIntervalOptionsAndSelection(SetupFlowTest.kt:72)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U05_exactIntervalOptionsAndSelection(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.U05_exactIntervalOptionsAndSelection(SetupFlowTest.kt:72)
+
+INSTRUMENTATION_STATUS: test=U05_exactIntervalOptionsAndSelection
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U10_failedStartDoesNotClaimSuccessAndCanRetry
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_failedStartDoesNotClaimSuccessAndCanRetry(SetupFlowTest.kt:144)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U10_failedStartDoesNotClaimSuccessAndCanRetry(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_failedStartDoesNotClaimSuccessAndCanRetry(SetupFlowTest.kt:144)
+
+INSTRUMENTATION_STATUS: test=U10_failedStartDoesNotClaimSuccessAndCanRetry
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U10_singleCompletionContainsChosenPreferences
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_singleCompletionContainsChosenPreferences(SetupFlowTest.kt:137)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U10_singleCompletionContainsChosenPreferences(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_singleCompletionContainsChosenPreferences(SetupFlowTest.kt:137)
+
+INSTRUMENTATION_STATUS: test=U10_singleCompletionContainsChosenPreferences
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U09_accessRevokedBeforeTapIsRechecked
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U09_accessRevokedBeforeTapIsRechecked(SetupFlowTest.kt:129)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U09_accessRevokedBeforeTapIsRechecked(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U09_accessRevokedBeforeTapIsRechecked(SetupFlowTest.kt:129)
+
+INSTRUMENTATION_STATUS: test=U09_accessRevokedBeforeTapIsRechecked
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U14_uiAutomatorFindsLanguageRowByResourceId
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at org.junit.Assert.assertNotNull(Assert.java:723)
+	at app.simwarning.setup.SetupFlowTest.U14_uiAutomatorFindsLanguageRowByResourceId(SetupFlowTest.kt:156)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U14_uiAutomatorFindsLanguageRowByResourceId(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at org.junit.Assert.assertNotNull(Assert.java:723)
+	at app.simwarning.setup.SetupFlowTest.U14_uiAutomatorFindsLanguageRowByResourceId(SetupFlowTest.kt:156)
+
+INSTRUMENTATION_STATUS: test=U14_uiAutomatorFindsLanguageRowByResourceId
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=U12_compactWidthAndDoubleFontKeepGermanActionsReachable
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.SetupFlowTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U12_compactWidthAndDoubleFontKeepGermanActionsReachable(SetupFlowTest.kt:114)
+
+INSTRUMENTATION_STATUS: stream=
+Error in U12_compactWidthAndDoubleFontKeepGermanActionsReachable(app.simwarning.setup.SetupFlowTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U12_compactWidthAndDoubleFontKeepGermanActionsReachable(SetupFlowTest.kt:114)
+
+INSTRUMENTATION_STATUS: test=U12_compactWidthAndDoubleFontKeepGermanActionsReachable
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.TextCatalogTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+app.simwarning.setup.TextCatalogTest:
+INSTRUMENTATION_STATUS: test=R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.TextCatalogTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames(TextCatalogTest.kt:12)
+
+INSTRUMENTATION_STATUS: stream=
+Error in R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames(app.simwarning.setup.TextCatalogTest):
+kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames(TextCatalogTest.kt:12)
+
+INSTRUMENTATION_STATUS: test=R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.TextCatalogTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=app.simwarning.setup.TextCatalogTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=14
+INSTRUMENTATION_STATUS: stack=kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText(TextCatalogTest.kt:24)
+
+INSTRUMENTATION_STATUS: stream=
+Error in R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText(app.simwarning.setup.TextCatalogTest):
+kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText(TextCatalogTest.kt:24)
+
+INSTRUMENTATION_STATUS: test=R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 31.182
+There were 14 failures:
+1) U07_missingAccessAndReviewNeverPretendsGrant(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U07_missingAccessAndReviewNeverPretendsGrant(SetupFlowTest.kt:120)
+2) U02_immediateTranslationWithStableSelectedRows(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U02_immediateTranslationWithStableSelectedRows(SetupFlowTest.kt:53)
+3) U01_deviceLanguageAndFallback(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Failed to assert the following: (Selected = 'true')
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:262)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+	at androidx.compose.ui.test.AssertionsKt.assertIsSelected(Assertions.kt:88)
+	at app.simwarning.setup.SetupFlowTest.U01_deviceLanguageAndFallback(SetupFlowTest.kt:43)
+4) U04_U06_backAndRecreationRetainStepLanguageAndInterval(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_de')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U04_U06_backAndRecreationRetainStepLanguageAndInterval(SetupFlowTest.kt:84)
+5) U06_saveableStateRestoresCurrentStepAndPreferences(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_da')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.U06_saveableStateRestoresCurrentStepAndPreferences(SetupFlowTest.kt:96)
+6) U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Failed: assertExists.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_language_screen')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists(SemanticsNodeInteraction.kt:125)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists$default(SemanticsNodeInteraction.kt:124)
+	at app.simwarning.setup.SetupFlowTest.U03_onlyCurrentStepIsExposedAndNoEarlyPermissionRequest(SetupFlowTest.kt:61)
+7) U05_exactIntervalOptionsAndSelection(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.U05_exactIntervalOptionsAndSelection(SetupFlowTest.kt:72)
+8) U10_failedStartDoesNotClaimSuccessAndCanRetry(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_failedStartDoesNotClaimSuccessAndCanRetry(SetupFlowTest.kt:144)
+9) U10_singleCompletionContainsChosenPreferences(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U10_singleCompletionContainsChosenPreferences(SetupFlowTest.kt:137)
+10) U09_accessRevokedBeforeTapIsRechecked(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U09_accessRevokedBeforeTapIsRechecked(SetupFlowTest.kt:129)
+11) U14_uiAutomatorFindsLanguageRowByResourceId(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertNotNull(Assert.java:713)
+	at org.junit.Assert.assertNotNull(Assert.java:723)
+	at app.simwarning.setup.SetupFlowTest.U14_uiAutomatorFindsLanguageRowByResourceId(SetupFlowTest.kt:156)
+12) U12_compactWidthAndDoubleFontKeepGermanActionsReachable(app.simwarning.setup.SetupFlowTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'setup_continue_button')
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:81)
+	at app.simwarning.setup.SetupFlowTest.next(SetupFlowTest.kt:37)
+	at app.simwarning.setup.SetupFlowTest.toPermissions(SetupFlowTest.kt:39)
+	at app.simwarning.setup.SetupFlowTest.U12_compactWidthAndDoubleFontKeepGermanActionsReachable(SetupFlowTest.kt:114)
+13) R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames(app.simwarning.setup.TextCatalogTest)
+kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R31_allThreeCatalogsHaveIdenticalNonemptyKeysAndTranslatedNames(TextCatalogTest.kt:12)
+14) R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText(app.simwarning.setup.TextCatalogTest)
+kotlin.NotImplementedError: An operation is not implemented: catalog asset loading
+	at app.simwarning.setup.TextCatalog$Companion.load(TextCatalog.kt:10)
+	at app.simwarning.setup.TextCatalogTest.R32_placeholdersAreStrictAndDoNotLeakIntoVisibleText(TextCatalogTest.kt:24)
+
+FAILURES!!!
+Tests run: 14,  Failures: 14
+
+
+INSTRUMENTATION_CODE: -1

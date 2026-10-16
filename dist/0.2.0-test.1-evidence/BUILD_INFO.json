@@ -1,0 +1,30 @@
+{
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "app.simwarning.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "approvedAudioBytesVerified": true,
+  "apk": "SimWarning-0.2.0-test.1.apk",
+  "minSdk": 26,
+  "version": "0.2.0-test.1",
+  "smokeEvidence": "docs/tdd/beta-smoke.json",
+  "signingPurpose": "Local development/test identity, not a store release",
+  "sha256": "430FDF3942BD60C0D018A3388F39E23EA34E15A0FB36F934B0AFC64B2B2E3BC4",
+  "androidTests": 33,
+  "activities": [
+    "app.simwarning.MainActivity"
+  ],
+  "bytes": 7613250,
+  "signatureVerified": true,
+  "versionCode": 2,
+  "exportedAtUtc": "2026-10-15T16:23:33.3993420Z",
+  "targetSdk": 36,
+  "knownLimits": "APK_GUIDE.md",
+  "debuggable": false,
+  "coreTests": 70
+}

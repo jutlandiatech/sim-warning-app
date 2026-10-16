@@ -1,0 +1,29 @@
+{
+  "observedAtUtc": "2026-10-15T15:50:03.7499657Z",
+  "coreTests": 70,
+  "coreFailures": 0,
+  "stages": [
+    {
+      "tests": 27,
+      "failures": 0,
+      "name": "ui-and-adapters"
+    },
+    {
+      "tests": 4,
+      "failures": 0,
+      "name": "service-lifecycle"
+    },
+    {
+      "tests": 1,
+      "failures": 0,
+      "name": "permission-denial"
+    },
+    {
+      "tests": 1,
+      "failures": 0,
+      "name": "permission-grant"
+    }
+  ],
+  "totalAndroidTests": 33.0,
+  "command": "tools/run-android-checks.ps1 -KeepEmulatorState"
+}

@@ -1,0 +1,52 @@
+{
+  "androidFailures": 0,
+  "additionalValidationTestSha256": "78F3F197EA939DBD305206020E4AC7EBBA7D765F081273AECB524A0277FEFC5B",
+  "unitSuites": [
+    {
+      "name": "app.simwarning.core.ConnectivityAggregationTest",
+      "failures": 0,
+      "errors": 0,
+      "tests": 5
+    },
+    {
+      "name": "app.simwarning.core.MonitorEngineTest",
+      "failures": 0,
+      "errors": 0,
+      "tests": 46
+    },
+    {
+      "name": "app.simwarning.core.SetupStateTest",
+      "failures": 0,
+      "errors": 0,
+      "tests": 6
+    }
+  ],
+  "unitResultsReusedAfterUiOnlyChanges": true,
+  "phase": "green-setup-final",
+  "buildFingerprint": "Android/sdk_phone64_x86_64/emu64x:15/AE3A.240806.019/12368160:userdebug/test-keys",
+  "androidCommand": "tools/run-ui-tests.ps1 -EvidencePath docs/tdd/green-setup-ui-final.txt",
+  "screenshotDirectory": "design/native-setup",
+  "lintWarnings": 5,
+  "finalBuildCommand": "tools/run-gradle.ps1 :app:assembleDebug :app:assembleDebugAndroidTest :app:assembleRelease :app:lintDebug",
+  "apkHashes": [
+    {
+      "Path": "%USERPROFILE%/.gradle-simwarning/outputs/SimWarning/app/outputs/apk/debug/app-debug.apk",
+      "Hash": "74FF99DD96D4264F69F28DE2671D4D08A87B69C4C34B658680FAE2E39F1D5D52"
+    },
+    {
+      "Path": "%USERPROFILE%/.gradle-simwarning/outputs/SimWarning/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+      "Hash": "1B0C8F6389C6136C4DE6D1F44295BAB3D9767759F57EF4BA80EFFA3E31601F3C"
+    },
+    {
+      "Path": "%USERPROFILE%/.gradle-simwarning/outputs/SimWarning/app/outputs/apk/release/app-release-unsigned.apk",
+      "Hash": "AD26796AD01033D78209A556974561D23A3F2ABAF293D53A7C21EBCAE08F041A"
+    }
+  ],
+  "lintErrors": 0,
+  "emulatorRamMb": 1024,
+  "androidTests": 19,
+  "buildExitCode": 0,
+  "originalTestSourcesUnchanged": true,
+  "emulatorGraphics": "host; Vulkan disabled",
+  "observedAtUtc": "2026-10-15T15:09:52.8060147Z"
+}

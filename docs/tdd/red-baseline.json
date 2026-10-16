@@ -1,0 +1,38 @@
+{
+  "phase": "red",
+  "command": "tools/run-gradle.ps1 :core:test",
+  "exitCode": 1,
+  "observedAtUtc": "2026-10-15T14:06:25.6544314Z",
+  "suites": [
+    {
+      "name": "app.simwarning.core.ConnectivityAggregationTest",
+      "tests": 5,
+      "failures": 5,
+      "errors": 0,
+      "failureTypes": [
+        "kotlin.NotImplementedError"
+      ]
+    },
+    {
+      "name": "app.simwarning.core.MonitorEngineTest",
+      "tests": 42,
+      "failures": 42,
+      "errors": 0,
+      "failureTypes": [
+        "java.lang.AssertionError",
+        "kotlin.NotImplementedError"
+      ]
+    }
+  ],
+  "sourceHashes": [
+    {
+      "file": "ConnectivityAggregationTest.kt",
+      "sha256": "D056EE6C322357B36C93789C8CFA2A4BD9146DCAABBAF59D6AE30B7A33451D89"
+    },
+    {
+      "file": "MonitorEngineTest.kt",
+      "sha256": "B40FB7C19A86DEABA1420C249A7F29C82AA9FD125820114C7A6B342874B17987"
+    }
+  ],
+  "contractSha256": "7DD170B9F014951EE814AEBF139E1744537B4A28C329D6E546D3F1931E451126"
+}

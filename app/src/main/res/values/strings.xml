@@ -1,0 +1,4 @@
+<resources>
+    <!-- Android's package label needs a native resource; app-owned UI uses JSON catalogs later. -->
+    <string name="app_name">Sim Warning</string>
+</resources>

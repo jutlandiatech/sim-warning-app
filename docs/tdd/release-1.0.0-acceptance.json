@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-15",
+  "version": "1.0.0",
+  "versionCode": 3,
+  "userReportedBetaPhoneTestSuccessful": true,
+  "userApprovedLouderSounds": true,
+  "userStatement": "the beta test on my phone was successfull with the volume of the sounds the only change needed",
+  "changes": ["Both approved louder previews replace packaged warning audio (+4.75 dB, no digital clipping)", "Version name 1.0.0 and version code 3", "Localized version label and removal of test-version wording"],
+  "unchanged": "Monitoring, timing, permissions, notification channel IDs, DND behavior, signing identity and application ID",
+  "priorEmulatorEvidence": "docs/tdd/beta-smoke.json applies to 0.2.0-test.1 only",
+  "exactReleaseEmulatorSmokeRun": false,
+  "phoneTestScope": "User-reported success; no device model or detailed test matrix supplied. Version 1.0.0 itself has not yet been installed on the user's phone."
+}

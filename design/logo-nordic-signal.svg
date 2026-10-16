@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Sim Warning — Nordic Signal logo concept</title>
+  <desc id="desc">A medium blue SIM card outline with a clipped upper right corner and three rising signal bars on white.</desc>
+  <rect width="512" height="512" rx="104" fill="#ffffff"/>
+  <path d="M164 100 H286 L360 174 V388 Q360 412 336 412 H164 Q140 412 140 388 V124 Q140 100 164 100 Z" fill="none" stroke="#2769ad" stroke-width="20" stroke-linejoin="round"/>
+  <path d="M200 326 V298 M250 326 V258 M300 326 V218" fill="none" stroke="#2769ad" stroke-width="24" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,14 @@
+.gradle/
+.gradle-user-home/
+.kotlin/
+.tooling/
+**/build/
+local.properties
+.idea/
+*.iml
+*.hprof
+*.jks
+*.keystore
+__pycache__/
+dist/*.apk
+!dist/SimWarning-1.0.0.apk

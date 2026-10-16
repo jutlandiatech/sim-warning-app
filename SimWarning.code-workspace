@@ -1,0 +1,9 @@
+{
+  "folders": [{"path": "."}],
+  "settings": {
+    "files.exclude": {"**/.gradle": true, "**/.gradle-user-home": true, "**/.tooling": true},
+    "search.exclude": {"**/build": true, "**/.gradle-user-home": true},
+    "files.encoding": "utf8",
+    "intellij.additionalJvmArgs": ["-Xmx768m"]
+  }
+}

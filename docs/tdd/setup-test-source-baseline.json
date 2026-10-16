@@ -1,0 +1,17 @@
+{
+  "observedAtUtc": "2026-10-15T14:49:14.3518809Z",
+  "testSources": [
+    {
+      "sha256": "17D38AF8D6B2B8E857958EBE526325B1DBE40ECE6BBC3D0DE4DD0B2CC8979B8C",
+      "path": "core/src/test/kotlin/app/simwarning/core/SetupStateTest.kt"
+    },
+    {
+      "sha256": "676A22A75D433A421CF8CAB334EB32ED66F45F0F18890F45DC6EF9834C3F1A56",
+      "path": "app/src/androidTest/java/app/simwarning/setup/SetupFlowTest.kt"
+    },
+    {
+      "sha256": "84DC63DAE5D9CCD7A26C2FA168AE02F5F6A20D2C3A34FD5EABE93C77EACCE9BB",
+      "path": "app/src/androidTest/java/app/simwarning/setup/TextCatalogTest.kt"
+    }
+  ]
+}

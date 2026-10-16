@@ -1,0 +1,24 @@
+{
+  "phase": "red-delayed-callback-regressions",
+  "exitCode": 1,
+  "command": "tools/run-gradle.ps1 :core:test",
+  "suites": [
+    {
+      "name": "app.simwarning.core.ConnectivityAggregationTest",
+      "tests": 5,
+      "failures": 0,
+      "failedScenarios": []
+    },
+    {
+      "name": "app.simwarning.core.MonitorEngineTest",
+      "tests": 46,
+      "failures": 4,
+      "failedScenarios": [
+        "A31 delayed startup callback still recognizes thirty seconds of stable service",
+        "R26 DND exit after delayed deadlines must not replay overdue audio",
+        "R16 delayed callback recognizes completed recovery before a new loss",
+        "R26 silent exit after delayed deadlines must not replay overdue alerts"
+      ]
+    }
+  ]
+}

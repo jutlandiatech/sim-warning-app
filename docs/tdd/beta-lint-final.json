@@ -1,0 +1,36 @@
+[
+  {
+    "issueIds": [
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "UnnecessaryRequiredFeature",
+      "UseKtx",
+      "UseKtx",
+      "UseKtx",
+      "UseKtx"
+    ],
+    "variant": "debug",
+    "errors": 0,
+    "warnings": 10
+  },
+  {
+    "issueIds": [
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "GradleDependency",
+      "UnnecessaryRequiredFeature",
+      "UseKtx",
+      "UseKtx",
+      "UseKtx",
+      "UseKtx"
+    ],
+    "variant": "beta",
+    "errors": 0,
+    "warnings": 10
+  }
+]

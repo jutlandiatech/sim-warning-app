@@ -1,0 +1,38 @@
+{
+  "phase": "green-final",
+  "observedAtUtc": "2026-10-15T14:33:28.9084598Z",
+  "executedUnitCommand": "tools/run-gradle.ps1 :core:test :core:build :app:assembleDebug :app:lintDebug",
+  "successfulFullCheckCommand": "tools/run-gradle.ps1 :core:build :app:assembleDebug :app:lintDebug",
+  "finalResourceVerificationCommand": "tools/run-gradle.ps1 :app:assembleDebug :app:lintDebug --rerun-tasks",
+  "finalBuildExitCode": 0,
+  "unitResultsFromEarlierExecutedCombinedBuild": true,
+  "totalTests": 51.0,
+  "totalFailures": 0.0,
+  "suites": [
+    {
+      "name": "app.simwarning.core.ConnectivityAggregationTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "name": "app.simwarning.core.MonitorEngineTest",
+      "tests": 46,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "lintIssues": 0,
+  "apkBytes": 891565,
+  "apkSha256": "FA75961AFE8F6F3729ED916307F5703A6B8DC48B34B261EDB13EFCAFC6A0FCAE",
+  "testSourceHashes": [
+    {
+      "file": "ConnectivityAggregationTest.kt",
+      "sha256": "D056EE6C322357B36C93789C8CFA2A4BD9146DCAABBAF59D6AE30B7A33451D89"
+    },
+    {
+      "file": "MonitorEngineTest.kt",
+      "sha256": "961AB2CDE40541360D217B01303667BA0446C0BF8D01A94B46295C3FD2FA6C80"
+    }
+  ]
+}

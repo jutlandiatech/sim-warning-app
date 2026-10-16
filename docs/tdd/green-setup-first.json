@@ -1,0 +1,14 @@
+{
+  "coreFailures": 0,
+  "androidTests": 14,
+  "phase": "green-setup-first",
+  "emulator": "API35 AOSP x86_64; 1024 MB; host GPU; Vulkan disabled",
+  "androidFailures": 0,
+  "androidOutput": "green-setup-ui-attempt1.txt",
+  "coreTests": 57,
+  "redAndroidOutput": "red-setup-ui.txt",
+  "lintDependencyUpdateSuggestions": 5,
+  "originalTestSourceHashesUnchanged": true,
+  "lintErrors": 0,
+  "observedAtUtc": "2026-10-15T14:55:54.2582098Z"
+}

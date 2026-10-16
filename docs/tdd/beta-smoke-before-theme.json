@@ -1,0 +1,218 @@
+{
+  "events": [
+    {
+      "data": {
+        "state": {
+          "status": "CONNECTED",
+          "nextDeadlineElapsedMs": "null",
+          "connectivity": "CONNECTED",
+          "visibleWarning": "null",
+          "desiredEnabled": "true",
+          "lastWarningPostElapsedMs": "null",
+          "running": "true",
+          "episodeSinceElapsedMs": "null"
+        },
+        "apkSha256": "B7193BAD354B9BA51E3BB930F9379C93A112393923C9993306695E7D36378B30"
+      },
+      "observedAtUtc": "2026-10-15T15:55:15.5085111Z",
+      "name": "beta-connected"
+    },
+    {
+      "data": {
+        "samples": 5,
+        "state": {
+          "status": "CONNECTED",
+          "nextDeadlineElapsedMs": "null",
+          "connectivity": "CONNECTED",
+          "visibleWarning": "null",
+          "desiredEnabled": "true",
+          "lastWarningPostElapsedMs": "null",
+          "running": "true",
+          "episodeSinceElapsedMs": "null"
+        }
+      },
+      "observedAtUtc": "2026-10-15T15:55:26.6763620Z",
+      "name": "mobile-data-off-still-connected"
+    },
+    {
+      "data": {
+        "state": {
+          "status": "LOSS_GRACE",
+          "nextDeadlineElapsedMs": "553879",
+          "connectivity": "DISCONNECTED",
+          "visibleWarning": "null",
+          "desiredEnabled": "true",
+          "lastWarningPostElapsedMs": "null",
+          "running": "true",
+          "episodeSinceElapsedMs": "523879"
+        },
+        "wifiConnected": true
+      },
+      "observedAtUtc": "2026-10-15T15:55:27.8648583Z",
+      "name": "ordinary-loss-grace"
+    },
+    {
+      "data": {
+        "state": {
+          "status": "OUTAGE",
+          "nextDeadlineElapsedMs": "643879",
+          "connectivity": "DISCONNECTED",
+          "visibleWarning": "CONNECTION_LOSS",
+          "desiredEnabled": "true",
+          "lastWarningPostElapsedMs": "553883",
+          "running": "true",
+          "episodeSinceElapsedMs": "523879"
+        },
+        "delayMs": 30004
+      },
+      "observedAtUtc": "2026-10-15T15:55:58.2700610Z",
+      "name": "visual-warning-posted-with-app-closed"
+    },
+    {
+      "data": {
+        "notification": [
+          "NotificationRecord(0x0c637886: pkg=app.simwarning user=UserHandle{0} id=1002 tag=null importance=3 key=0|app.simwarning|1002|null|10148: Notification(channel=loss_alert_v1 shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=0 color=0x00000000 category=status vis=PUBLIC))",
+          "  uid=10148 userId=0",
+          "  opPkg=app.simwarning",
+          "  icon=Icon(typ=RESOURCE pkg=app.simwarning id=0x7f04000e)",
+          "  flags=0",
+          "  originalFlags=0",
+          "  pri=0",
+          "  key=0|app.simwarning|1002|null|10148",
+          "  seen=false",
+          "  groupKey=0|app.simwarning|1002|null|10148",
+          "  notification=",
+          "    fullscreenIntent=null",
+          "    contentIntent=PendingIntent{2b75547: PendingIntentRecord{fcf0dd7 app.simwarning startActivity (allowlist: 9fba3a9:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}",
+          "    deleteIntent=PendingIntent{ff52174: PendingIntentRecord{b6f3db8 app.simwarning broadcastIntent (allowlist: 9fba3a9:+30s0ms/0/NOTIFICATION_SERVICE/NotificationManagerService)}}",
+          "    number=0",
+          "    groupAlertBehavior=0",
+          "    when=1792079725879/1792079725879",
+          "    tickerText=null",
+          "    vis=1",
+          "    contentView=null",
+          "    bigContentView=null",
+          "    headsUpContentView=null",
+          "    color=0x00000000",
+          "    timeout=PT0S",
+          "    extras={",
+          "        android.title=String (No mobile service)",
+          "        android.reduced.images=Boolean (true)",
+          "        android.subText=null",
+          "        android.template=String (android.app.Notification$BigTextStyle)",
+          "        android.showChronometer=Boolean (true)",
+          "        android.text=String (Your phone has lost mobile service. If it does not return, check the SIM card and your phone's network settings.)",
+          "        android.progress=Integer (0)",
+          "        androidx.core.app.extra.COMPAT_TEMPLATE=String (androidx.core.app.NotificationCompat$BigTextStyle)",
+          "        android.progressMax=Integer (0)",
+          "        android.appInfo=ApplicationInfo (ApplicationInfo{f48c69d app.simwarning})",
+          "        android.showWhen=Boolean (true)",
+          "        android.largeIcon=null",
+          "        android.bigText=String (Your phone has lost mobile service. If it does not return, check the SIM card and your phone's network settings.)",
+          "        android.infoText=null",
+          "        android.progressIndeterminate=Boolean (false)",
+          "        android.remoteInputHistory=null",
+          "    }",
+          "  publicNotification=",
+          "    None",
+          "  stats=SingleNotificationStats{posttimeElapsedMs=554126, posttimeToFirstClickMs=-1, posttimeToDismissMs=-1, airtimeCount=0, airtimeMs=0, currentAirtimeStartElapsedMs=-1, airtimeExpandedMs=0, posttimeToFirstVisibleExpansionMs=-1, currentAirtimeExpandedStartElapsedMs=-1, requestedImportance=3, naturalImportance=3, isNoisy=true}",
+          "  mContactAffinity=0.0",
+          "  mRecentlyIntrusive=true",
+          "  mPackagePriority=0",
+          "  mPackageVisibility=-1000",
+          "  mSystemImportance=UNSPECIFIED",
+          "  mAsstImportance=UNSPECIFIED",
+          "  mImportance=DEFAULT",
+          "  mImportanceExplanation=app",
+          "  mProposedImportance=UNSPECIFIED",
+          "  mIsAppImportanceLocked=true",
+          "  mSensitiveContent=false",
+          "  mIntercept=false",
+          "  mHidden==false",
+          "  mGlobalSortKey=crtcl=0x0002:intrsv=0:grnk=0x0000:gsmry=1:nsk:rnk=0x0000",
+          "  mRankingTimeMs=1792079725879",
+          "  mCreationTimeMs=1792079755913",
+          "  mVisibleSinceMs=0",
+          "  mUpdateTimeMs=1792079845935",
+          "  mInterruptionTimeMs=1792079846146",
+          "  mSuppressedVisualEffects= 0",
+          "  mSound= android.resource://app.simwarning/raw/connection_loss",
+          "  mVibration= Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}, Step{amplitude=0.0, frequencyHz=0.0, duration=140}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}, Step{amplitude=0.0, frequencyHz=0.0, duration=140}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}], repeat=-1}",
+          "  mAttributes= AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null",
+          "  mLight= null",
+          "  mShowBadge=true",
+          "  mColorized=false",
+          "  mAllowBubble=false",
+          "  isBubble=false",
+          "  mIsInterruptive=true",
+          "  effectiveNotificationChannel=NotificationChannel{mId='loss_alert_v1', mName=Mobile service loss, mDescription=, mImportance=3, mBypassDnd=false, mLockscreenVisibility=-1000, mSound=android.resource://app.simwarning/raw/connection_loss, mLights=false, mLightColor=0, mVibrationPattern=[0, 180, 140, 180, 140, 180], mVibrationEffect=Composed{segments=[Step{amplitude=0.0, frequencyHz=0.0, duration=0}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}, Step{amplitude=0.0, frequencyHz=0.0, duration=140}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}, Step{amplitude=0.0, frequencyHz=0.0, duration=140}, Step{amplitude=-1.0, frequencyHz=0.0, duration=180}], repeat=-1}, mUserLockedFields=0, mUserVisibleTaskShown=false, mVibrationEnabled=true, mShowBadge=true, mDeleted=false, mDeletedTimeMs=-1, mGroup='null', mAudioAttributes=AudioAttributes: usage=USAGE_NOTIFICATION content=CONTENT_TYPE_SONIFICATION flags=0x800 tags= bundle=null, mBlockableSystem=false, mAllowBubbles=-1, mImportanceLockedDefaultApp=false, mOriginalImp=3, mParent=null, mConversationId=null, mDemoted=false, mImportantConvo=false, mLastNotificationUpdateTimeMs=0}",
+          "  mAdjustments=[]",
+          "  shortcut=null found valid? false",
+          "  mUserVisOverride=-1000"
+        ],
+        "delayMs": 120039,
+        "state": {
+          "status": "OUTAGE",
+          "nextDeadlineElapsedMs": "763879",
+          "connectivity": "DISCONNECTED",
+          "visibleWarning": "CONNECTION_LOSS",
+          "desiredEnabled": "true",
+          "lastWarningPostElapsedMs": "643918",
+          "running": "true",
+          "episodeSinceElapsedMs": "523879"
+        }
+      },
+      "observedAtUtc": "2026-10-15T15:57:28.8825449Z",
+      "name": "two-minute-alert-posted"
+    },
+    {
+      "data": {
+        "status": "RECOVERING",
+        "nextDeadlineElapsedMs": "690372",
+        "connectivity": "CONNECTED",
+        "visibleWarning": "CONNECTION_LOSS",
+        "desiredEnabled": "true",
+        "lastWarningPostElapsedMs": "643918",
+        "running": "true",
+        "episodeSinceElapsedMs": "523879"
+      },
+      "observedAtUtc": "2026-10-15T15:57:45.3784456Z",
+      "name": "warning-retained-during-recovery"
+    },
+    {
+      "data": {
+        "status": "CONNECTED",
+        "nextDeadlineElapsedMs": "null",
+        "connectivity": "CONNECTED",
+        "visibleWarning": "null",
+        "desiredEnabled": "true",
+        "lastWarningPostElapsedMs": "643918",
+        "running": "true",
+        "episodeSinceElapsedMs": "null"
+      },
+      "observedAtUtc": "2026-10-15T15:58:15.6204025Z",
+      "name": "recovered-quietly"
+    },
+    {
+      "data": {
+        "status": "RECOVERING",
+        "nextDeadlineElapsedMs": "86690",
+        "connectivity": "CONNECTED",
+        "visibleWarning": "null",
+        "desiredEnabled": "true",
+        "lastWarningPostElapsedMs": "null",
+        "running": "true",
+        "episodeSinceElapsedMs": "56624"
+      },
+      "observedAtUtc": "2026-10-15T15:59:22.1510788Z",
+      "name": "enabled-monitoring-resumed-after-real-reboot"
+    },
+    {
+      "data": {
+        "scope": "Awake API35 emulator only; sound output routed by Android, not acoustically verified; no battery/Doze claim."
+      },
+      "observedAtUtc": "2026-10-15T15:59:22.1575930Z",
+      "name": "PASS"
+    }
+  ]
+}

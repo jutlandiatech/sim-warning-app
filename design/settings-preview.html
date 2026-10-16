@@ -1,0 +1,71 @@
+<div id="sim-settings-preview" class="viz-dotted-background">
+ <div class="ss-phone" aria-label="Sim Warning settings preview">
+  <header><button id="ss-back" type="button" class="cursor-interaction" aria-label="Back"><i data-lucide="arrow-left" aria-hidden="true"></i></button><h1 id="ss-title">Settings</h1></header>
+  <main id="ss-content" aria-live="polite"></main>
+  <footer><span></span></footer>
+ </div>
+</div>
+<style>
+#sim-settings-preview{padding:24px 12px;display:flex;justify-content:center}
+#sim-settings-preview .ss-phone{--ss-blue:#2769ad;--ss-text:18px;box-sizing:border-box;width:100%;max-width:390px;background:#fff;color:#15191e;border:1px solid #d4dbe2;border-radius:28px;overflow:hidden;font:400 var(--ss-text)/1.5 Roboto,"Segoe UI",Arial,sans-serif;box-shadow:0 10px 35px #102c4612}
+#sim-settings-preview header{padding:20px 16px;display:flex;gap:12px;align-items:center;border-bottom:1px solid #e9edf1}
+#sim-settings-preview h1{font-size:28px;line-height:1.25;font-weight:500;margin:0;overflow-wrap:anywhere}
+#sim-settings-preview header button{width:48px;min-width:48px;min-height:48px;display:grid;place-items:center;border:0;background:#fff;color:var(--ss-blue);border-radius:12px}
+#sim-settings-preview main{padding:8px 24px 32px;min-height:430px}
+#sim-settings-preview button{font:inherit}
+#sim-settings-preview .ss-row{width:100%;display:flex;align-items:center;gap:14px;text-align:left;padding:20px 0;border:0;border-bottom:1px solid #e0e6ed;background:#fff;color:#15191e;min-height:76px}
+#sim-settings-preview .ss-row>.ss-icon{width:24px;flex-shrink:0;color:var(--ss-blue);display:flex}
+#sim-settings-preview .ss-row .ss-label{flex:1;min-width:0;overflow-wrap:anywhere}
+#sim-settings-preview .ss-value{display:block;color:#454e58;font-size:16px;margin-top:3px}
+#sim-settings-preview .ss-chevron{font-size:26px;color:#667484}
+#sim-settings-preview .ss-detail{padding-top:22px}
+#sim-settings-preview p{margin:0 0 22px;color:#454e58}
+#sim-settings-preview h2{font-size:20px;font-weight:500;line-height:1.4;margin:24px 0 10px}
+#sim-settings-preview fieldset{border:0;margin:0;padding:0;min-width:0}
+#sim-settings-preview legend{font-size:20px;font-weight:500;margin-bottom:12px}
+#sim-settings-preview .ss-choice{display:flex;align-items:center;gap:14px;border:1px solid #c2cedb;border-radius:12px;padding:16px;margin:12px 0;min-height:24px}
+#sim-settings-preview .ss-choice:has(input:checked){background:#edf4fc;border-color:var(--ss-blue)}
+#sim-settings-preview input{width:22px;height:22px;accent-color:var(--ss-blue);flex-shrink:0}
+#sim-settings-preview select{font:inherit;padding:12px;width:100%;min-height:56px;background:#fff;color:#15191e;border:1px solid #a8bfd7;border-radius:10px;margin:12px 0 24px;box-sizing:border-box}
+#sim-settings-preview .ss-action{width:100%;min-height:56px;font:500 var(--ss-text)/1.4 Roboto,"Segoe UI",Arial,sans-serif;border:1px solid var(--ss-blue);border-radius:12px;background:var(--ss-blue);color:#fff;padding:14px}
+#sim-settings-preview .ss-feedback{margin-top:24px;padding:16px;background:#edf4fc;border-radius:12px}
+#sim-settings-preview footer{display:flex;justify-content:center;padding:12px 20px 20px}
+#sim-settings-preview footer span{width:100px;height:4px;background:#15191e;border-radius:4px}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('sim-settings-preview'),content=root.querySelector('#ss-content');
+let route='settings',lang='en',interval=2,warning='loss';
+const d={
+en:{settings:'Settings',language:'Language',interval:'Warning interval',preview:'Preview sound',test:'Test warning',permissions:'Permissions',help:'Help',every:'Every',minutes:'minutes',both:'Both warning types',review:'Review access',later:'You can change your choices at any time.',repeat:'Sound and vibration repeat at this interval while mobile service is unavailable.',soundHint:'Choose the warning sound to preview.',testHint:'Choose a warning type. A test does not affect monitoring.',loss:'No mobile network connection',unknown:'Connection status unavailable',choose:'Warning type',play:'Preview sound',send:'Test warning',sample:'Test notification',audioNote:'Listen to the approved sound samples in the chat.',access:'The app needs only the access required to check mobile service and show warnings.',accessNote:'Permission requests are not active in this preview.',helpTitle:'How Sim Warning works',helpText:'Leave monitoring on. The app runs in the background and warns if mobile service is lost.',timingTitle:'Time to reconnect',timing:'Short losses are ignored for 30 seconds. After startup or leaving airplane mode, the app waits 5 minutes.',quietTitle:'Your choice of quiet',quiet:'Warnings respect Do Not Disturb and your phone’s sound settings. Airplane mode pauses warnings.',back:'Back',main:'Sim Warning',connected:'Mobile network connected',on:'Monitoring is on'},
+da:{settings:'Indstillinger',language:'Sprog',interval:'Advarselsinterval',preview:'Afspil advarselslyd',test:'Test advarsel',permissions:'Tilladelser',help:'Hjælp',every:'Hvert',minutes:'minut',both:'Begge advarselstyper',review:'Gennemgå adgang',later:'Du kan altid ændre dine valg.',repeat:'Lyd og vibration gentages med dette interval, så længe mobilforbindelsen mangler.',soundHint:'Vælg den advarselslyd, du vil høre.',testHint:'Vælg en advarselstype. En test påvirker ikke overvågningen.',loss:'Ingen forbindelse til mobilnettet',unknown:'Forbindelsesstatus er ikke tilgængelig',choose:'Advarselstype',play:'Afspil lyd',send:'Test advarsel',sample:'Testmeddelelse',audioNote:'Du kan høre de godkendte lyde i chatten.',access:'Appen behøver kun den adgang, der er nødvendig for at kontrollere mobilforbindelsen og vise advarsler.',accessNote:'Tilladelser kan ikke gives i denne forhåndsvisning.',helpTitle:'Sådan virker SIM-advarsel',helpText:'Lad overvågningen være slået til. Appen kører i baggrunden og advarer, hvis mobilforbindelsen forsvinder.',timingTitle:'Tid til at oprette forbindelse',timing:'Korte udfald ignoreres i 30 sekunder. Efter opstart eller flytilstand venter appen 5 minutter.',quietTitle:'Ro, når du ønsker det',quiet:'Advarsler respekterer Forstyr ikke og telefonens lydindstillinger. Flytilstand sætter advarsler på pause.',back:'Tilbage',main:'SIM-advarsel',connected:'Forbindelse til mobilnettet',on:'Overvågning er slået til'},
+de:{settings:'Einstellungen',language:'Sprache',interval:'Warnintervall',preview:'Warnton anhören',test:'Warnung testen',permissions:'Berechtigungen',help:'Hilfe',every:'Alle',minutes:'Minuten',both:'Beide Warnungstypen',review:'Zugriff prüfen',later:'Sie können Ihre Auswahl jederzeit ändern.',repeat:'Ton und Vibration wiederholen sich in diesem Abstand, solange keine Mobilfunkverbindung besteht.',soundHint:'Wählen Sie den Warnton aus, den Sie anhören möchten.',testHint:'Wählen Sie einen Warnungstyp. Der Test beeinflusst die Überwachung nicht.',loss:'Keine Verbindung zum Mobilfunknetz',unknown:'Verbindungsstatus nicht verfügbar',choose:'Warnungstyp',play:'Warnton anhören',send:'Warnung testen',sample:'Testbenachrichtigung',audioNote:'Die freigegebenen Klangbeispiele können Sie im Chat anhören.',access:'Die App benötigt nur Zugriff, um den Mobilfunkstatus zu prüfen und Warnungen anzuzeigen.',accessNote:'In dieser Vorschau werden keine Berechtigungen angefordert.',helpTitle:'So funktioniert SIM-Warnung',helpText:'Lassen Sie die Überwachung eingeschaltet. Die App läuft im Hintergrund und warnt bei einem Ausfall der Mobilfunkverbindung.',timingTitle:'Zeit für die Verbindung',timing:'Kurze Ausfälle werden 30 Sekunden lang ignoriert. Nach dem Start oder Flugmodus wartet die App 5 Minuten.',quietTitle:'Ruhe nach Ihren Wünschen',quiet:'Warnungen beachten „Nicht stören“ und die Toneinstellungen. Im Flugmodus pausieren die Warnungen.',back:'Zurück',main:'SIM-Warnung',connected:'Mit dem Mobilfunknetz verbunden',on:'Überwachung ist eingeschaltet'}
+};
+const names={da:'🇩🇰 Dansk',en:'🇬🇧 English',de:'🇩🇪 Deutsch'};
+function render(){const t=d[lang];root.querySelector('.ss-phone').lang=lang;root.querySelector('#ss-title').textContent=t[route]||t.main;root.querySelector('#ss-back').setAttribute('aria-label',t.back);
+if(route==='settings'){
+const values={language:names[lang],interval:t.every+' '+interval+' '+t.minutes,preview:t.both,test:t.both,permissions:t.review,help:''};
+const icons={language:'languages',interval:'timer',preview:'volume-2',test:'bell',permissions:'shield-check',help:'circle-help'};
+content.innerHTML=['language','interval','preview','test','permissions','help'].map(key=>'<button type="button" class="ss-row cursor-interaction" id="settings_'+({interval:'warning_interval',preview:'preview_sound',test:'test_warning'}[key]||key)+'_item" data-page="'+key+'"><span class="ss-icon"><i data-lucide="'+icons[key]+'" aria-hidden="true"></i></span><span class="ss-label">'+t[key]+(values[key]?'<span class="ss-value">'+values[key]+'</span>':'')+'</span><span class="ss-chevron" aria-hidden="true">›</span></button>').join('');
+content.querySelectorAll('[data-page]').forEach(button=>button.addEventListener('click',()=>{route=button.dataset.page;render();}));
+}else if(route==='language'){
+content.innerHTML='<div class="ss-detail"><p>'+t.later+'</p><fieldset><legend>'+t.language+'</legend>'+['da','en','de'].map(code=>'<label class="ss-choice cursor-interaction"><input type="radio" name="ss-language" value="'+code+'" '+(lang===code?'checked':'')+'>'+names[code]+'</label>').join('')+'</fieldset></div>';
+content.querySelectorAll('input').forEach(input=>input.addEventListener('change',()=>{lang=input.value;render();}));
+}else if(route==='interval'){
+content.innerHTML='<div class="ss-detail"><p>'+t.repeat+'</p><label for="ss-interval">'+t.interval+'</label><select id="ss-interval">'+[2,4,6,8,10].map(n=>'<option value="'+n+'" '+(n===interval?'selected':'')+'>'+t.every+' '+n+' '+t.minutes+'</option>').join('')+'</select></div>';
+content.querySelector('select').addEventListener('change',e=>{interval=Number(e.target.value);});
+}else if(route==='preview'||route==='test'){
+content.innerHTML='<div class="ss-detail"><p>'+(route==='preview'?t.soundHint:t.testHint)+'</p><label for="ss-type">'+t.choose+'</label><select id="ss-type"><option value="loss" '+(warning==='loss'?'selected':'')+'>'+t.loss+'</option><option value="unknown" '+(warning==='unknown'?'selected':'')+'>'+t.unknown+'</option></select><button class="ss-action cursor-interaction" type="button" id="ss-action">'+(route==='preview'?t.play:t.send)+'</button><div id="ss-feedback" aria-live="polite"></div></div>';
+content.querySelector('select').addEventListener('change',e=>{warning=e.target.value;content.querySelector('#ss-feedback').textContent='';});
+content.querySelector('#ss-action').addEventListener('click',()=>{content.querySelector('#ss-feedback').innerHTML='<div class="ss-feedback">'+(route==='test'?'<h2>'+t.sample+'</h2><p>'+(warning==='loss'?t.loss:t.unknown)+'</p>':t.audioNote)+'</div>';});
+}else if(route==='permissions'){
+content.innerHTML='<div class="ss-detail"><p>'+t.access+'</p><button class="ss-action cursor-interaction" type="button" id="ss-review">'+t.review+'</button><p id="ss-feedback" style="margin-top:24px" aria-live="polite"></p></div>';content.querySelector('button').addEventListener('click',()=>{content.querySelector('#ss-feedback').textContent=t.accessNote;});
+}else if(route==='help'){
+content.innerHTML='<div class="ss-detail"><h2>'+t.helpTitle+'</h2><p>'+t.helpText+'</p><h2>'+t.timingTitle+'</h2><p>'+t.timing+'</p><h2>'+t.quietTitle+'</h2><p>'+t.quiet+'</p></div>';
+}else{content.innerHTML='<div class="ss-detail"><h2>'+t.connected+'</h2><p>'+t.on+'</p><button type="button" class="ss-action cursor-interaction">'+t.settings+'</button></div>';content.querySelector('button').addEventListener('click',()=>{route='settings';render();});}
+if(globalThis.lucide)lucide.createIcons({attrs:{width:24,height:24}});
+}
+root.querySelector('#ss-back').addEventListener('click',()=>{route=route==='settings'?'main':'settings';render();});render();
+if(globalThis.Tweak){const state={textSize:18};const phone=root.querySelector('.ss-phone');const tweak=new Tweak({container:phone,onChange:()=>phone.style.setProperty('--ss-text',state.textSize+'px')});tweak.addSlider(state,'textSize',{label:'Body text size',min:18,max:24,step:2,unit:'px'});}
+})();
+</script>

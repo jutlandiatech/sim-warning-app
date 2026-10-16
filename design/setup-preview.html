@@ -1,0 +1,74 @@
+<div id="sim-setup" class="viz-dotted-background">
+ <div class="sw-phone" aria-label="Sim Warning setup preview">
+  <header><i data-lucide="signal" aria-hidden="true"></i><span id="sw-name">Sim Warning</span></header>
+  <main>
+   <div class="sw-step" id="sw-step">Step 1 of 4</div>
+   <div class="sw-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+   <section id="sw-page" aria-live="polite"></section>
+   <nav><button type="button" id="sw-next" class="sw-primary cursor-interaction">Continue</button><button type="button" id="sw-back" class="sw-back cursor-interaction" hidden>Back</button></nav>
+  </main>
+  <footer><span></span></footer>
+ </div>
+</div>
+<style>
+#sim-setup{display:flex;justify-content:center;padding:24px 12px}
+#sim-setup .sw-phone{--sw-blue:#2769ad;--sw-text-size:18px;background:#fff;color:#15191e;width:100%;max-width:390px;box-sizing:border-box;border:1px solid #d4dbe2;border-radius:28px;overflow:hidden;font:400 var(--sw-text-size)/1.5 Roboto,"Segoe UI",Arial,sans-serif;box-shadow:0 10px 35px #102c4612}
+#sim-setup header{display:flex;align-items:center;gap:12px;padding:26px 24px 20px;border-bottom:1px solid #e9edf1;font-size:22px;font-weight:500}
+#sim-setup header svg{width:28px;height:28px;color:var(--sw-blue)}
+#sim-setup main{padding:26px 24px 20px}
+#sim-setup .sw-step{color:#454e58;font-size:16px}
+#sim-setup .sw-dots{display:flex;gap:8px;margin:14px 0 30px}
+#sim-setup .sw-dots span{width:26px;height:4px;border-radius:4px;background:#d8e2ed}
+#sim-setup .sw-dots .sw-filled{background:var(--sw-blue)}
+#sim-setup h1{font-size:28px;font-weight:500;line-height:1.25;letter-spacing:-.4px;margin:0 0 18px;overflow-wrap:anywhere}
+#sim-setup h2{font-size:20px;font-weight:500;margin:0 0 8px}
+#sim-setup p{margin:0 0 22px;color:#454e58;line-height:1.55}
+#sim-setup fieldset{border:0;padding:0;margin:0;min-width:0}
+#sim-setup legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#sim-setup label.sw-choice{display:flex;align-items:center;gap:14px;border:1px solid #c2cedb;border-radius:12px;padding:16px;margin:12px 0;min-height:24px;overflow-wrap:anywhere}
+#sim-setup label.sw-choice:has(input:checked){border-color:var(--sw-blue);background:#edf4fc}
+#sim-setup input[type=radio]{width:22px;height:22px;accent-color:var(--sw-blue);flex-shrink:0;margin:0}
+#sim-setup .sw-flag{font-size:24px}
+#sim-setup .sw-info{padding:18px 0;border-top:1px solid #e0e6ed}
+#sim-setup .sw-info p{margin:0}
+#sim-setup select{font:inherit;width:100%;min-height:56px;border:1px solid #a8bfd7;border-radius:10px;background:#fff;color:#15191e;padding:12px;margin:10px 0 24px;box-sizing:border-box}
+#sim-setup button{font:500 var(--sw-text-size)/1.4 Roboto,"Segoe UI",Arial,sans-serif;min-height:56px;border-radius:12px;padding:13px 16px;width:100%;white-space:normal}
+#sim-setup .sw-primary{background:var(--sw-blue);color:#fff;border:1px solid var(--sw-blue)}
+#sim-setup .sw-secondary{background:#fff;color:var(--sw-blue);border:1px solid #a8bfd7;margin:0 0 22px}
+#sim-setup .sw-back{background:#fff;color:var(--sw-blue);border:0;margin-top:8px}
+#sim-setup button:disabled{background:#e8edf2;color:#586571;border-color:#e8edf2}
+#sim-setup nav{margin-top:32px}
+#sim-setup #sw-page{min-height:310px}
+#sim-setup .sw-preview-note{font-size:16px;color:#454e58;margin-top:8px}
+#sim-setup footer{display:flex;justify-content:center;padding:10px 20px 20px}
+#sim-setup footer span{width:100px;height:4px;background:#15191e;border-radius:4px}
+#sim-setup [hidden]{display:none}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('sim-setup');
+const page=root.querySelector('#sw-page'), next=root.querySelector('#sw-next'), back=root.querySelector('#sw-back');
+const catalog={
+en:{name:'Sim Warning',step:'Step',of:'of',language:'Choose your language',languageHint:'You can change this later in Settings.',continue:'Continue',back:'Back',intro:'Stay aware of lost mobile service',introText:'Sim Warning runs in the background and warns you if your phone loses its mobile network connection.',intent:'Quiet when you choose',intentText:'No warnings in airplane mode or when you intentionally disable all SIMs.',respect:'Your sound settings apply',respectText:'Warnings respect Do Not Disturb, silent mode and vibrate mode.',interval:'Choose a warning interval',intervalText:'If mobile service stays unavailable, sound and vibration repeat at this interval.',every:'Every',minutes:'minutes',visual:'You also get a visual warning',visualText:'Usually after 30 seconds. After startup or airplane mode, the app allows 5 minutes to reconnect.',permissions:'Allow essential access',permissionText:'The app needs access to check mobile service and show warnings. Android will ask for the permissions needed on your phone.',privacy:'Your information stays on your phone. No account or tracking.',review:'Review permissions',reviewed:'Access reviewed',preview:'Preview only — no permissions are requested.',start:'Start monitoring',ready:'Monitoring is on',readyText:'The app can now run in the background. You can close it.',wait:'Time to connect',waitText:'If service is unavailable, the initial grace period is 5 minutes.',restart:'Review setup again'},
+da:{name:'SIM-advarsel',step:'Trin',of:'af',language:'Vælg dit sprog',languageHint:'Du kan ændre sproget senere under Indstillinger.',continue:'Fortsæt',back:'Tilbage',intro:'Få besked, hvis mobilforbindelsen forsvinder',introText:'SIM-advarsel kører i baggrunden og giver besked, hvis telefonen mister forbindelsen til mobilnettet.',intent:'Ro, når du vælger det',intentText:'Ingen advarsler i flytilstand, eller når du selv deaktiverer alle SIM-kort.',respect:'Telefonens lydindstillinger gælder',respectText:'Advarsler respekterer Forstyr ikke, lydløs tilstand og vibrationstilstand.',interval:'Vælg advarselsinterval',intervalText:'Hvis mobilforbindelsen stadig mangler, gentages lyd og vibration med dette interval.',every:'Hvert',minutes:'minut',visual:'Du får også en synlig advarsel',visualText:'Normalt efter 30 sekunder. Efter opstart eller flytilstand får telefonen 5 minutter til at oprette forbindelse.',permissions:'Giv nødvendig adgang',permissionText:'Appen skal kunne kontrollere mobilforbindelsen og vise advarsler. Android beder om de tilladelser, din telefon kræver.',privacy:'Dine oplysninger bliver på telefonen. Ingen konto eller sporing.',review:'Gennemgå tilladelser',reviewed:'Adgang gennemgået',preview:'Kun en forhåndsvisning — der anmodes ikke om tilladelser.',start:'Start overvågning',ready:'Overvågning er slået til',readyText:'Appen kan nu køre i baggrunden. Du kan lukke den.',wait:'Tid til at oprette forbindelse',waitText:'Hvis forbindelsen mangler, er den indledende frist 5 minutter.',restart:'Se opsætningen igen'},
+de:{name:'SIM-Warnung',step:'Schritt',of:'von',language:'Sprache auswählen',languageHint:'Sie können die Sprache später in den Einstellungen ändern.',continue:'Weiter',back:'Zurück',intro:'Bemerken, wenn die Mobilfunkverbindung ausfällt',introText:'SIM-Warnung läuft im Hintergrund und warnt Sie, wenn Ihr Telefon die Verbindung zum Mobilfunknetz verliert.',intent:'Ruhe, wenn Sie es möchten',intentText:'Keine Warnungen im Flugmodus oder wenn Sie alle SIM-Karten selbst deaktivieren.',respect:'Ihre Toneinstellungen gelten',respectText:'Warnungen beachten „Nicht stören“, den Lautlosmodus und den Vibrationsmodus.',interval:'Warnintervall auswählen',intervalText:'Bleibt die Mobilfunkverbindung unterbrochen, wiederholen sich Ton und Vibration in diesem Abstand.',every:'Alle',minutes:'Minuten',visual:'Auch eine sichtbare Warnung',visualText:'Normalerweise nach 30 Sekunden. Nach dem Start oder Flugmodus bleiben 5 Minuten für die Verbindung.',permissions:'Erforderlichen Zugriff erlauben',permissionText:'Die App benötigt Zugriff, um den Mobilfunkstatus zu prüfen und Warnungen anzuzeigen. Android fragt nach den auf Ihrem Telefon nötigen Berechtigungen.',privacy:'Ihre Daten bleiben auf dem Telefon. Kein Konto und kein Tracking.',review:'Berechtigungen prüfen',reviewed:'Zugriff geprüft',preview:'Nur eine Vorschau — es werden keine Berechtigungen angefordert.',start:'Überwachung starten',ready:'Überwachung ist eingeschaltet',readyText:'Die App kann jetzt im Hintergrund laufen. Sie können sie schließen.',wait:'Zeit für die Verbindung',waitText:'Ist keine Verbindung verfügbar, gilt zunächst eine Wartezeit von 5 Minuten.',restart:'Einrichtung erneut ansehen'}
+};
+let step=0,lang='en',interval=2,reviewed=false;
+function info(title,text){return '<div class="sw-info"><h2>'+title+'</h2><p>'+text+'</p></div>';}
+function render(){
+ const t=catalog[lang];root.querySelector('#sw-name').textContent=t.name;root.querySelector('.sw-phone').lang=lang;
+ root.querySelector('#sw-step').textContent=step<4?t.step+' '+(step+1)+' '+t.of+' 4':t.ready;
+ root.querySelectorAll('.sw-dots span').forEach((dot,i)=>dot.classList.toggle('sw-filled',i<=step));
+ back.hidden=step===0||step===4;back.textContent=t.back;next.disabled=false;next.textContent=step===3?t.start:step===4?t.restart:t.continue;
+ if(step===0){page.innerHTML='<h1>'+t.language+'</h1><p>'+t.languageHint+'</p><fieldset><legend>'+t.language+'</legend>'+[['da','🇩🇰','Dansk'],['en','🇬🇧','English'],['de','🇩🇪','Deutsch']].map(([code,flag,label])=>'<label class="sw-choice cursor-interaction"><input type="radio" name="sw-language" value="'+code+'" '+(lang===code?'checked':'')+'><span class="sw-flag" aria-hidden="true">'+flag+'</span><span>'+label+'</span></label>').join('')+'</fieldset>';page.querySelectorAll('input').forEach(input=>input.addEventListener('change',()=>{lang=input.value;render();}));}
+ if(step===1){page.innerHTML='<h1>'+t.intro+'</h1><p>'+t.introText+'</p>'+info(t.intent,t.intentText)+info(t.respect,t.respectText);}
+ if(step===2){page.innerHTML='<h1>'+t.interval+'</h1><p>'+t.intervalText+'</p><label for="sw-interval">'+t.interval+'</label><select id="sw-interval">'+[2,4,6,8,10].map(n=>'<option value="'+n+'" '+(interval===n?'selected':'')+'>'+t.every+' '+n+' '+t.minutes+'</option>').join('')+'</select>'+info(t.visual,t.visualText);page.querySelector('select').addEventListener('change',e=>{interval=Number(e.target.value);});}
+ if(step===3){page.innerHTML='<h1>'+t.permissions+'</h1><p>'+t.permissionText+'</p><p>'+t.privacy+'</p><button type="button" class="sw-secondary cursor-interaction" id="sw-review">'+(reviewed?t.reviewed:t.review)+'</button><p class="sw-preview-note">'+t.preview+'</p>';next.disabled=!reviewed;page.querySelector('#sw-review').addEventListener('click',()=>{reviewed=true;render();});}
+ if(step===4){page.innerHTML='<h1>'+t.ready+'</h1><p>'+t.readyText+'</p>'+info(t.wait,t.waitText);}
+}
+next.addEventListener('click',()=>{step=step===4?0:Math.min(4,step+1);render();});
+back.addEventListener('click',()=>{step=Math.max(0,step-1);render();});
+render();
+if(globalThis.Tweak){const state={textSize:18};const phone=root.querySelector('.sw-phone');const tweak=new Tweak({container:phone,onChange:()=>phone.style.setProperty('--sw-text-size',state.textSize+'px')});tweak.addSlider(state,'textSize',{label:'Body text size',min:18,max:24,step:2,unit:'px'});}
+})();
+</script>

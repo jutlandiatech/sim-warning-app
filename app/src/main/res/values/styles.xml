@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.SimWarning.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:colorAccent">#2769AD</item>
+    </style>
+    <style name="Theme.SimWarning" parent="Theme.SimWarning.Base" />
+</resources>

@@ -1,0 +1,28 @@
+[
+  {
+    "source": "connection-loss-candidate.wav",
+    "preview": "connection-loss-louder-preview.wav",
+    "source_sha256": "d9fcde51580b06e26673263c627440d1c5ad7ab44d5f3d727f70e9a1327e4501",
+    "gain_db": 4.75,
+    "source_peak_dbfs": -5.19,
+    "preview_peak_dbfs": -0.45,
+    "source_rms_dbfs": -14.11,
+    "preview_rms_dbfs": -9.36,
+    "duration_seconds": 2.1,
+    "clipped_samples": 0,
+    "preview_sha256": "3bd3949f8a358e21845a14be781ee7c483dd31ebeaa30c2ea282a7814db10261"
+  },
+  {
+    "source": "status-unavailable-candidate.wav",
+    "preview": "status-unavailable-louder-preview.wav",
+    "source_sha256": "8c51f89a5fab166144e021cd9fa14dee20a5eae29b5e47bcde85477599817208",
+    "gain_db": 4.75,
+    "source_peak_dbfs": -5.19,
+    "preview_peak_dbfs": -0.45,
+    "source_rms_dbfs": -12.68,
+    "preview_rms_dbfs": -7.94,
+    "duration_seconds": 1.8,
+    "clipped_samples": 0,
+    "preview_sha256": "9fd7794937bce6c539a7d5a0a6be7aee63f5d776adedc537f75fbca33b3dba33"
+  }
+]

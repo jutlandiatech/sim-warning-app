@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sim Warning: build beta APK",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":app:assembleBeta", ":app:lintBeta"],
+      "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: export tested APK",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/export-beta.ps1"],
+      "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: build UI tests",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":app:assembleDebug", ":app:assembleDebugAndroidTest"],
+      "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: run UI tests on emulator",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-ui-tests.ps1", "-CleanAppData"],
+      "group": "test", "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: Android integration checks",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-android-checks.ps1"],
+      "group": "test", "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: unit tests",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":core:test"],
+      "group": {"kind": "test", "isDefault": true}, "problemMatcher": [],
+      "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: build Android APK",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":app:assembleDebug"],
+      "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: all checks",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":core:check", ":app:lintDebug", ":app:assembleDebug"],
+      "problemMatcher": [], "options": {"cwd": "${workspaceFolder}"}
+    },
+    {
+      "label": "Sim Warning: build core",
+      "type": "process", "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/tools/run-gradle.ps1", ":core:build"],
+      "group": {"kind": "build", "isDefault": true}, "problemMatcher": [],
+      "options": {"cwd": "${workspaceFolder}"}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "coreRedTests": 70,
+  "androidRedTests": 8,
+  "observedAtUtc": "2026-10-15T15:22:46.9527096Z",
+  "coreRedFailures": 13,
+  "tests": [
+    {
+      "path": "core/src/test/kotlin/app/simwarning/core/AppControllerTest.kt",
+      "sha256": "D29A3B3C0350EEFDDF35B17CEA35F38F0464844C4F4E94D3D1D2BE7423A52D31"
+    },
+    {
+      "path": "core/src/test/kotlin/app/simwarning/core/CellularEvidenceTest.kt",
+      "sha256": "269B67733084D98CF40F83E1088530D0894E2CCD95A65D716B07F448B4D74BE7"
+    },
+    {
+      "path": "app/src/androidTest/java/app/simwarning/platform/AndroidPlatformTest.kt",
+      "sha256": "4D70C22EC5DFB920417710517C37B438D4768F9E8FA1541C3CDA3C509AE08809"
+    },
+    {
+      "path": "app/src/androidTest/java/app/simwarning/AppNavigationTest.kt",
+      "sha256": "1A493A218CDA0F1599E86B7ED7A6F17AABC25E5B92A2E4F5365146A69D3CBAB5"
+    }
+  ],
+  "androidRedFailures": 8
+}
