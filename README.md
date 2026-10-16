@@ -4,6 +4,12 @@ A minimal Android app that warns about unexpected loss of mobile network service
 
 Approved localized names: **Sim Warning**, **SIM-advarsel**, **SIM-Warnung**.
 
+## License
+
+This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). It permits personal and other defined noncommercial uses; commercial use is not permitted under this license. This is a source-available license, not an OSI-approved open-source license.
+
+Earlier revisions were distributed under The Unlicense. This change does not revoke rights already granted for copies obtained under that license.
+
 The consolidated requirements, acceptance scenarios, and remaining review points are in [SPECIFICATION.md](SPECIFICATION.md). This is the authoritative working specification.
 
 The combined [Specification and Architecture PDF](docs/Sim-Warning-Specification-and-Architecture.pdf) is generated from that specification and the current UML in `docs/ARCHITECTURE_UML.md`. Regenerate it on Windows with `.\tools\export-documentation-pdf.ps1` (Microsoft Edge and internet access are required to render the UML diagrams).
