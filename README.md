@@ -6,6 +6,8 @@ Approved localized names: **Sim Warning**, **SIM-advarsel**, **SIM-Warnung**.
 
 The consolidated requirements, acceptance scenarios, and remaining review points are in [SPECIFICATION.md](SPECIFICATION.md). This is the authoritative working specification.
 
+The combined [Specification and Architecture PDF](docs/Sim-Warning-Specification-and-Architecture.pdf) is generated from that specification and the current UML in `docs/ARCHITECTURE_UML.md`. Regenerate it on Windows with `.\tools\export-documentation-pdf.ps1` (Microsoft Edge and internet access are required to render the UML diagrams).
+
 Current version: 1.0.0. The user reported a successful beta phone test; this version includes their approved louder sounds (+4.75 dB). Setup, main status/switch, Settings/Help, real Android permissions, persisted preferences, foreground monitoring, cellular callbacks, warning notifications, original sounds, and boot resume are implemented. Validation includes 70 passing core tests, 33 staged API 35 Android checks, and live beta radio/restart smoke checks. Broader physical-phone coverage, full older-device classification, deep-sleep timing, and battery measurements remain pending.
 
 The installable APK is [dist/SimWarning-1.0.0.apk](dist/SimWarning-1.0.0.apk). Read [APK_GUIDE.md](APK_GUIDE.md) for installation and device limits; [dist/BUILD_INFO.json](dist/BUILD_INFO.json) identifies the tested binary. The non-debuggable beta is signed for local testing and excludes the debug instrumentation host.
