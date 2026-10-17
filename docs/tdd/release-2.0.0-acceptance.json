@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-17",
+  "version": "2.0.0",
+  "versionCode": 4,
+  "userRequestedAudioIncrease": true,
+  "targetRmsRatio": 1.8,
+  "definition": "80% increase in PCM RMS versus version 1.0.0 (+5.105 dB); perceived loudness is device dependent",
+  "method": "Smooth saturation with 95% peak headroom. Adds harmonics; brighter timbre, unchanged notes and duration.",
+  "changes": [
+    "Two warning WAVs",
+    "Version metadata and localized version label"
+  ],
+  "monitoringLogicChanged": false,
+  "exactReleaseEmulatorSmokeRun": false,
+  "exactReleasePhoneTest": false,
+  "audioMeasurements": "design/v2-audio-measurements.json"
+}

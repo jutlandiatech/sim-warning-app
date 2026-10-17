@@ -12,3 +12,4 @@ local.properties
 __pycache__/
 dist/*.apk
 !dist/SimWarning-1.0.0.apk
+!dist/SimWarning-2.0.0.apk

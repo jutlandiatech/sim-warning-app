@@ -31,7 +31,7 @@
   "action.startMonitoring": "Überwachung starten",
   "main.monitoring": "Überwachung",
   "main.settings": "Einstellungen",
-  "main.testVersion": "Version 1.0.0",
+  "main.testVersion": "Version 2.0.0",
   "status.off": "Überwachung ist ausgeschaltet",
   "status.permission": "Erforderlicher Zugriff fehlt",
   "status.stopped": "Die Überwachung läuft nicht. Schalten Sie sie aus und wieder ein, um es erneut zu versuchen.",

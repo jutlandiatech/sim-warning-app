@@ -31,7 +31,7 @@
   "action.startMonitoring": "Start overvågning",
   "main.monitoring": "Overvågning",
   "main.settings": "Indstillinger",
-  "main.testVersion": "Version 1.0.0",
+  "main.testVersion": "Version 2.0.0",
   "status.off": "Overvågning er slået fra",
   "status.permission": "Nødvendig adgang mangler",
   "status.stopped": "Overvågning kører ikke. Slå den fra og til for at prøve igen.",

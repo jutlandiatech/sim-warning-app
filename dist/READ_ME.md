@@ -1,10 +1,10 @@
-# Sim Warning — version 1.0.0
+# Sim Warning — version 2.0.0
 
-Version 1.0.0 (version code 3). Installable file: `dist/SimWarning-1.0.0.apk`. The user reported successful beta testing on their phone and approved both louder sound previews. The release includes those sounds at +4.75 dB with no digital clipping, plus version wording updates. Monitoring behavior is unchanged.
+Version 2.0.0 (version code 4). Installable file: `dist/SimWarning-2.0.0.apk`. The user reported successful beta testing on their phone and approved both louder sound previews. Version 2.0.0 increases both sounds by 80% in PCM RMS relative to 1.0.0 (+5.105 dB). Smooth saturation keeps peaks at 95% without digital clipping and adds harmonics for a fuller, brighter tone. Notes and duration are unchanged. This signal-level increase does not guarantee 80% greater perceived loudness on every phone. Monitoring behavior is unchanged.
 
-Install over the beta to retain setup, settings and notification preferences. The same local signing identity is used. Android notification volume, DND and channel settings still apply. A custom sound selected in Android notification settings remains your choice; use Settings → Preview sound and Test warning after updating to check playback on your phone.
+Install over version 1.0.0 or the beta to retain setup, settings and notification preferences. The same local signing identity is used. Android notification volume, DND and channel settings still apply. A custom sound selected in Android notification settings remains your choice; use Settings → Preview sound and Test warning after updating to check playback on your phone.
 
-Release verification covers build/lint, signature, manifest, SDK levels and exact packaged audio hashes. The 70 core tests and 33 Android checks and radio/reboot smoke evidence are from the prior beta; they are not claimed as fresh emulator runs of 1.0.0. See `docs/tdd/release-1.0.0-acceptance.json`.
+Version 2.0.0 has not yet been tested on a physical phone. Release verification covers build/lint, signature, manifest, SDK levels and exact packaged audio hashes. The 70 core tests and 33 Android checks and radio/reboot smoke evidence are from the prior beta; they are not claimed as fresh emulator runs of 2.0.0. See `docs/tdd/release-2.0.0-acceptance.json`.
 
 ## Install and try
 

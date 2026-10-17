@@ -1,0 +1,30 @@
+[
+  {
+    "source": "connection-loss-louder-preview.wav",
+    "output": "connection-loss-v2.wav",
+    "sourceSha256": "3bd3949f8a358e21845a14be781ee7c483dd31ebeaa30c2ea282a7814db10261",
+    "outputSha256": "f19c92ac11bf2538c13646518853a204cf7980100bc14385825d66b0f0757b18",
+    "rmsRatio": 1.8000001901816582,
+    "rmsGainDb": 5.10545101978657,
+    "peak": 0.9500106814783166,
+    "clippedSamples": 0,
+    "durationSeconds": 2.1,
+    "sampleRate": 44100,
+    "method": "Smooth tanh saturation; brighter timbre; 95% peak cap",
+    "drive": 4.120729027411982
+  },
+  {
+    "source": "status-unavailable-louder-preview.wav",
+    "output": "status-unavailable-v2.wav",
+    "sourceSha256": "9fd7794937bce6c539a7d5a0a6be7aee63f5d776adedc537f75fbca33b3dba33",
+    "outputSha256": "7545e3ff7130d06e3ad59b072baf39802dcc62b27556373c8945c487f3981d74",
+    "rmsRatio": 1.8000027841669892,
+    "rmsGainDb": 5.10546353703751,
+    "peak": 0.9500106814783166,
+    "clippedSamples": 0,
+    "durationSeconds": 1.8,
+    "sampleRate": 44100,
+    "method": "Smooth tanh saturation; brighter timbre; 95% peak cap",
+    "drive": 9.116040038230562
+  }
+]

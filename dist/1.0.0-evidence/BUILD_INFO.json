@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "exactReleaseEmulatorSmokeRun": false,
+  "priorBetaSmokeEvidence": "docs/tdd/beta-smoke.json",
+  "minSdk": 26,
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "app.simwarning.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "matchesPriorBetaSigningCertificate": true,
+  "apk": "SimWarning-1.0.0.apk",
+  "activities": [
+    "app.simwarning.MainActivity"
+  ],
+  "targetSdk": 36,
+  "releaseAcceptance": "docs/tdd/release-1.0.0-acceptance.json",
+  "versionCode": 3,
+  "knownLimits": "APK_GUIDE.md",
+  "historicalCoreTests": 70,
+  "signatureVerified": true,
+  "exportedAtUtc": "2026-10-15T16:45:01.4462988Z",
+  "signingPurpose": "Same local signing identity as the phone-tested beta; not a store release",
+  "debuggable": false,
+  "releaseChecks": "Build, lint, signature, manifest, SDK levels and packaged approved audio hashes",
+  "bytes": 7613190,
+  "approvedAudioBytesVerified": true,
+  "historicalAndroidTests": 33,
+  "sha256": "8728E9F3B03CF90C4B047791F5B92CE41011837B1A9BB7B92F940BF807117124",
+  "lintErrors": 0
+}

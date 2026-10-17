@@ -31,7 +31,7 @@
   "action.startMonitoring": "Start monitoring",
   "main.monitoring": "Monitoring",
   "main.settings": "Settings",
-  "main.testVersion": "Version 1.0.0",
+  "main.testVersion": "Version 2.0.0",
   "status.off": "Monitoring is off",
   "status.permission": "Essential access is needed",
   "status.stopped": "Monitoring is not running. Switch it off and on to try again.",

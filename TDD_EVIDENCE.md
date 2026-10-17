@@ -71,3 +71,8 @@ Remaining gates include physical multi-SIM/eSIM, Wi-Fi calling/data-only and API
 ## Version 1.0.0 — 2026-10-15
 
 User reported successful beta testing on their phone and requested only louder audio and version 1.0.0. Both approved previews replace packaged WAVs (+4.75 dB, same melodies/durations, zero clipped PCM samples). Version code increments to 3. Localized version wording updated; application logic and notification channels unchanged. Release build/lint, signature/manifest and packaged audio hash validation are the relevant delta checks. No new behavior tests were added for gain/metadata changes. Prior 70 core/33 Android test and beta smoke evidence remains historical; no exact-1.0.0 emulator smoke run is claimed. See release acceptance JSON and dist build information.
+
+
+## Version 2.0.0 — 2026-10-17
+
+User requested version 2.0.0 with sounds 80% louder. Implemented as 1.8x PCM RMS relative to 1.0.0 (+5.105 dB), with smooth tanh saturation and 95% peak headroom. This adds harmonics and changes timbre; it is not an acoustic/perceptual loudness guarantee. Source originals and 1.0.0 audio are preserved. Generator checks RMS ratio tolerance, unchanged frame count/format, zero preservation and zero digitally clipped samples. See design/v2-audio-measurements.json. Packaged WAV hashes are checked at export. Only resource audio, version labels and metadata changed; full suite/emulator tests were deliberately not rerun. No physical test of 2.0.0 is claimed.

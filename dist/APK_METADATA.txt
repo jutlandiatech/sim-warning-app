@@ -1,4 +1,4 @@
-package: name='app.simwarning' versionCode='3' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+package: name='app.simwarning' versionCode='4' versionName='2.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
 minSdkVersion:'26'
 targetSdkVersion:'36'
 uses-permission: name='android.permission.READ_PHONE_STATE'
